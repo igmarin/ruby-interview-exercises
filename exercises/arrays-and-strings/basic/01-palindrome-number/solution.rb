@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 def is_palindrome(x)
-  raise NotImplementedError, 'Implement is_palindrome'
+  x.to_s == x.to_s.reverse
 end
