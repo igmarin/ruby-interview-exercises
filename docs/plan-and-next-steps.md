@@ -4,11 +4,11 @@ This document is your study companion. It contains the full exercise catalog, a 
 
 ## What you have
 
-The repo contains 40 Ruby exercises:
+The repo contains 55 Ruby exercises (54 coding plus one discussion):
 
-- **20 basic** — single-concept, build confidence and muscle memory.
-- **10 medium** — often multi-part, require combining two patterns.
-- **10 hard** — multi-part optimization, design, and discussion.
+- **25 basic** — single-concept, build confidence and muscle memory.
+- **15 medium** — often multi-part, require combining two patterns.
+- **15 hard** — multi-part optimization, design, and discussion.
 
 Every coding exercise has:
 
@@ -23,36 +23,37 @@ The `code-review/hard/01-ruby-code-review-and-rubric/` exercise is a discussion 
 
 | Pattern | Focus | Count |
 |---------|-------|-------|
-| `hash-maps` | O(1) lookups, frequency, grouping | 7 |
-| `arrays-and-strings` | in-place manipulation, string building | 7 |
-| `two-pointers` | sorted arrays, palindromes, partition | 5 |
-| `sliding-window` | subarray/substring problems | 4 |
-| `trees-and-graphs` | BFS/DFS, serialization, topo sort | 10 |
-| `ruby-idioms` | `Hash`, `Array`, `Enumerable`, `Set`, heaps | 6 |
+| `hash-maps` | O(1) lookups, frequency, grouping | 9 |
+| `arrays-and-strings` | in-place manipulation, string building | 10 |
+| `two-pointers` | sorted arrays, palindromes, partition | 8 |
+| `sliding-window` | subarray/substring problems | 7 |
+| `trees-and-graphs` | BFS/DFS, serialization, topo sort | 13 |
+| `ruby-idioms` | `Hash`, `Array`, `Enumerable`, `Set`, heaps | 7 |
 | `code-review` | trade-off analysis, performance, design | 1 |
 
 ## Suggested 6-week schedule
 
 ### Week 1: Foundations
 
-- Complete all **basic** `hash-maps` (4)
-- Complete all **basic** `arrays-and-strings` (6)
+- Complete all **basic** `hash-maps` (5)
+- Complete all **basic** `arrays-and-strings` (7)
 - Target: solve each in under 15 minutes, explain complexity out loud.
 
 ### Week 2: Two Pointers & Sliding Window
 
-- Complete all **basic** and **medium** `two-pointers` (4)
-- Complete all **basic** and **medium** `sliding-window` (3)
+- Complete all **basic** and **medium** `two-pointers` (6)
+- Complete all **basic** and **medium** `sliding-window` (5)
 - Target: be comfortable with invariants and window state.
 
 ### Week 3: Trees & Graphs Foundations
 
-- Complete all **basic** and **medium** `trees-and-graphs` (6)
+- Complete all **basic** and **medium** `trees-and-graphs` (8)
 - Target: write BFS/DFS without looking at notes.
 
 ### Week 4: Ruby Idioms & Medium Review
 
 - Complete all **basic** and **medium** `ruby-idioms` (4)
+- Also pick up remaining **medium** hash-map, array, pointer, and window problems from the catalog.
 - Re-do any medium problem you found hard.
 - Target: explain Ruby-specific trade-offs (`each` vs `map`, `Hash` order, `Set`, string concatenation).
 
@@ -77,20 +78,25 @@ The `code-review/hard/01-ruby-code-review-and-rubric/` exercise is a discussion 
 | `hash-maps/basic/02-contains-duplicate` | Hash Maps | LeetCode 217 |
 | `hash-maps/basic/03-valid-anagram` | Hash Maps | LeetCode 242 |
 | `hash-maps/basic/04-intersection-of-two-arrays` | Hash Maps | LeetCode 349 |
+| `hash-maps/basic/05-ransom-note` | Hash Maps | LeetCode 383 |
 | `arrays-and-strings/basic/01-palindrome-number` | Arrays & Strings | LeetCode 9 |
 | `arrays-and-strings/basic/02-reverse-string` | Arrays & Strings | LeetCode 344 |
 | `arrays-and-strings/basic/03-fizzbuzz` | Arrays & Strings | LeetCode 412 |
 | `arrays-and-strings/basic/04-move-zeroes` | Arrays & Strings | LeetCode 283 |
 | `arrays-and-strings/basic/05-remove-duplicates-from-sorted-array` | Arrays & Strings | LeetCode 26 |
 | `arrays-and-strings/basic/06-plus-one` | Arrays & Strings | LeetCode 66 |
+| `arrays-and-strings/basic/07-longest-common-prefix` | Arrays & Strings | LeetCode 14 |
 | `two-pointers/basic/01-valid-palindrome` | Two Pointers | LeetCode 125 |
 | `two-pointers/basic/02-two-sum-ii` | Two Pointers | LeetCode 167 |
 | `two-pointers/basic/03-merge-sorted-array` | Two Pointers | LeetCode 88 |
+| `two-pointers/basic/04-squares-of-a-sorted-array` | Two Pointers | LeetCode 977 |
 | `sliding-window/basic/01-maximum-average-subarray-i` | Sliding Window | LeetCode 643 |
 | `sliding-window/basic/02-contains-duplicate-ii` | Sliding Window | LeetCode 219 |
+| `sliding-window/basic/03-max-consecutive-ones` | Sliding Window | LeetCode 485 |
 | `trees-and-graphs/basic/01-maximum-depth-of-binary-tree` | Trees/Graphs | LeetCode 104 |
 | `trees-and-graphs/basic/02-invert-binary-tree` | Trees/Graphs | LeetCode 226 |
 | `trees-and-graphs/basic/03-path-sum` | Trees/Graphs | LeetCode 112 |
+| `trees-and-graphs/basic/04-same-tree` | Trees/Graphs | LeetCode 100 |
 | `ruby-idioms/basic/01-sum-and-average` | Ruby Idioms | original |
 | `ruby-idioms/basic/02-word-frequency-counter` | Ruby Idioms | original |
 
@@ -100,12 +106,17 @@ The `code-review/hard/01-ruby-code-review-and-rubric/` exercise is a discussion 
 |----------|---------|-----------|
 | `hash-maps/medium/01-group-anagrams` | Hash Maps | LeetCode 49 |
 | `hash-maps/medium/02-top-k-frequent-elements` | Hash Maps | LeetCode 347 |
+| `hash-maps/medium/03-subarray-sum-equals-k` | Hash Maps | LeetCode 560 |
 | `arrays-and-strings/medium/01-string-to-integer-atoi` | Arrays & Strings | LeetCode 8 |
+| `arrays-and-strings/medium/02-product-of-array-except-self` | Arrays & Strings | LeetCode 238 |
 | `two-pointers/medium/01-3sum` | Two Pointers | LeetCode 15 |
+| `two-pointers/medium/02-container-with-most-water` | Two Pointers | LeetCode 11 |
 | `sliding-window/medium/01-longest-substring-without-repeating-characters` | Sliding Window | LeetCode 3 |
+| `sliding-window/medium/02-minimum-size-subarray-sum` | Sliding Window | LeetCode 209 |
 | `trees-and-graphs/medium/01-binary-tree-level-order-traversal` | Trees/Graphs | LeetCode 102 |
 | `trees-and-graphs/medium/02-number-of-islands` | Trees/Graphs | LeetCode 200 |
 | `trees-and-graphs/medium/03-course-schedule` | Trees/Graphs | LeetCode 207 |
+| `trees-and-graphs/medium/04-clone-graph` | Trees/Graphs | LeetCode 133 |
 | `ruby-idioms/medium/01-evaluate-reverse-polish-notation` | Ruby Idioms | LeetCode 150 |
 | `ruby-idioms/medium/02-lru-cache` | Ruby Idioms | LeetCode 146 |
 
@@ -114,14 +125,19 @@ The `code-review/hard/01-ruby-code-review-and-rubric/` exercise is a discussion 
 | Exercise | Pattern | Reference |
 |----------|---------|-----------|
 | `hash-maps/hard/01-longest-consecutive-sequence` | Hash Maps | LeetCode 128 |
+| `arrays-and-strings/hard/01-first-missing-positive` | Arrays & Strings | LeetCode 41 |
 | `two-pointers/hard/01-trapping-rain-water` | Two Pointers | LeetCode 42 |
+| `two-pointers/hard/02-4sum` | Two Pointers | LeetCode 18 |
 | `sliding-window/hard/01-sliding-window-maximum` | Sliding Window | LeetCode 239 |
+| `sliding-window/hard/02-minimum-window-substring` | Sliding Window | LeetCode 76 |
 | `trees-and-graphs/hard/01-binary-tree-maximum-path-sum` | Trees/Graphs | LeetCode 124 |
 | `trees-and-graphs/hard/02-serialize-and-deserialize-binary-tree` | Trees/Graphs | LeetCode 297 |
 | `trees-and-graphs/hard/03-word-ladder` | Trees/Graphs | LeetCode 127 |
 | `trees-and-graphs/hard/04-course-schedule-ii` | Trees/Graphs | LeetCode 210 |
+| `trees-and-graphs/hard/05-alien-dictionary` | Trees/Graphs | LeetCode 269 |
 | `ruby-idioms/hard/01-merge-k-sorted-lists` | Ruby Idioms | LeetCode 23 |
 | `ruby-idioms/hard/02-find-median-from-data-stream` | Ruby Idioms | LeetCode 295 |
+| `ruby-idioms/hard/03-implement-trie` | Ruby Idioms | LeetCode 208 |
 | `code-review/hard/01-ruby-code-review-and-rubric` | Code Review | original |
 
 ## Per-exercise workflow

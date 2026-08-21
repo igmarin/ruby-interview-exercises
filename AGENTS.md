@@ -2,7 +2,7 @@
 
 ## Project type
 
-Ruby interview prep repository. Contains 40 coding exercises plus a code-review discussion exercise.
+Ruby interview prep repository. Contains 54 coding exercises plus a code-review discussion exercise.
 
 ## Conventions
 
